@@ -15,7 +15,7 @@ Ejercicios básicos
 
    * Complete el cálculo de la autocorrelación e inserte a continuación el código correspondiente.
 
-  ```cpp
+  ```py
     import matplotlib.pyplot as plt
     import numpy as np
     import soundfile as sf
@@ -53,6 +53,21 @@ Ejercicios básicos
 
    * Determine el mejor candidato para el periodo de pitch localizando el primer máximo secundario de la
      autocorrelación. Inserte a continuación el código correspondiente.
+
+  ```cpp
+      vector<float>::const_iterator iR = r.begin(), iRMax = iR + npitch_min;
+        
+        for(iR = r.begin() + npitch_min; iR < r.begin() +  npitch_max; iR++ ){
+          if(*iR > *iRMax){
+            iRMax = iR;
+          }
+        }
+
+        unsigned int lag = iRMax - r.begin();
+
+        float pot = 10 * log10(r[0]);
+
+  ```
 
    * Implemente la regla de decisión sonoro o sordo e inserte el código correspondiente.
 
