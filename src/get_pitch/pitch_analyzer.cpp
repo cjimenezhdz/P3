@@ -58,10 +58,11 @@ namespace upc {
     /// * You can use the standard features (pot, r1norm, rmaxnorm),
     ///   or compute and use other ones.
 
-    if( pot > -48.9F && (r1norm > 0.93F || rmaxnorm > 0.45F))
+    if( pot > -48.6F && (rmaxnorm > 0.45F || r1norm > 0.93F)){
       return false;
-    else
+    }else{
       return true;
+    }
   }
 
   float PitchAnalyzer::compute_pitch(vector<float> & x) const {
