@@ -77,6 +77,14 @@ int main(int argc, const char *argv[]) {
   /// Postprocess the estimation in order to supress errors. For instance, a median filter
   /// or time-warping may be used.
 
+  // median filter to supress errors
+  for (unsigned int i = 1; i < f0.size(); ++i)
+  {
+    vector<float> aux {f0[i-1],f0[i],f0[i+1]};
+    sort(aux.begin(), aux.end());
+    f0[i] = aux[1];
+  }
+
   // Write f0 contour into the output file
   ofstream os(output_txt);
   if (!os.good()) {
