@@ -15,7 +15,7 @@ Ejercicios básicos
 
    * Complete el cálculo de la autocorrelación e inserte a continuación el código correspondiente.
 
-  ```c
+  ```cpp
     import matplotlib.pyplot as plt
     import numpy as np
     import soundfile as sf
