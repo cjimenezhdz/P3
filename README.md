@@ -20,7 +20,7 @@ Ejercicios básicos
     import numpy as np
     import soundfile as sf
 
-    signal, fm = sf.read('') #falta grabar y añadir la señal sonora
+    signal, fm = sf.read('audio_p3.wav')
     t = np.arange(0, len(signal)) /fm
 
     plt.figure()
