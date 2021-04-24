@@ -31,7 +31,10 @@ namespace upc {
     switch (win_type) {
     case HAMMING:
       /// \TODO Implement the Hamming window
-      /// break;
+      for(unsigned int i = 0; i < frameLen; i++){
+        window[i] = 0.54F - 0.46F * cos(( 2 * M_PI * i) / (frameLen - 1));
+      }
+       break;
     case RECT:
     default:
       window.assign(frameLen, 1);
