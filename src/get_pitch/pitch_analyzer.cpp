@@ -54,7 +54,11 @@ namespace upc {
     /// \TODO Implement a rule to decide whether the sound is voiced or not.
     /// * You can use the standard features (pot, r1norm, rmaxnorm),
     ///   or compute and use other ones.
-    return false;
+
+    if( pot > -48.9F && (r1norm > 0.93F || rmaxnorm > 0.45F))
+      return false;
+    else
+      return true;
   }
 
   float PitchAnalyzer::compute_pitch(vector<float> & x) const {
