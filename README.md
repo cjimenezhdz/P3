@@ -40,7 +40,7 @@ Ejercicios básicos
    > Para ejecutar la representación de las dos gráficas hemos utilizado Python, aprovechando sus librerias y sus funciones para poder representar tanto la señal como su autocorrelación.
    > La señal que hemos grabado es el fonema sonoro de la vocal 'o'.
 
-   <img src="img/img3.png" width="640" align="center">
+   <img src="img/Figure_1.png" width="640" align="center">
 
     ```py
     import matplotlib.pyplot as plt
@@ -149,6 +149,15 @@ Ejercicios básicos
    * Inserte una gráfica en la que se vea con claridad el resultado de su detector de pitch junto al del
      detector de Wavesurfer. Aunque puede usarse Wavesurfer para obtener la representación, se valorará
 	 el uso de alternativas de mayor calidad (particularmente Python).
+      > Hemos intentado hacer el codigo de Python, pero nos daba un error al leer los archivos que le introduciamos,
+      en su lugar para seguir viendo el funcionamiento del detector hemos grabado una frase completa y la hemos pasado
+      por el detector.
+      En el panel superior tenemos nuestro sistema y en el inferior el del programa, y hemos podido volver a comprobar
+      el correcto funcionamiento de nuestro detector ya que consigue una buena aproximación del pitch. Tambien con esta
+      frase hemos podido comprobar la variabilidad del tono según si eres hombre o mujer, y podemos ver como la primera 
+      parte de la frase al estar grabada por Cecilia tenemos un tono con un rango de frecuencia superior que la segunda
+      parte que esta grabada por Percy donde vemos que el rango de frecuencia del tono ha disminuido. 
+
 
     <img src="img/img3.png" width="640" align="center">
    
@@ -178,7 +187,7 @@ Ejercicios de ampliación
 
   ```cpp
 
-  // median filter to supress errors
+  // FILTRO DE MEDIANA
   for (unsigned int i = 1; i < f0.size(); ++i)
   {
     vector<float> aux {f0[i-1],f0[i],f0[i+1]};
@@ -200,6 +209,9 @@ Ejercicios de ampliación
 
   Incluya, a continuación, una explicación de las técnicas incorporadas al detector. Se valorará la
   inclusión de gráficas, tablas, código o cualquier otra cosa que ayude a comprender el trabajo realizado.
+      > El filtro de mediana que hemos incorporado, se basa en asignar a cada punto el valor de la mediana
+      local
+      <img src="img/filtro_mediana.png" width="640" align="center">
 
   También se valorará la realización de un estudio de los parámetros involucrados. Por ejemplo, si se opta
   por implementar el filtro de mediana, se valorará el análisis de los resultados obtenidos en función de
