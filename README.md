@@ -132,7 +132,7 @@ Ejercicios básicos
     Y en el tercer panel, nos encontramos con el pitch que genera el programa `wavesurfer`.
 
     <img src="img/img2.png" width="640" align="center">
-    > img2
+     > img2
 
       - Use el detector de pitch implementado en el programa `wavesurfer` en una señal de prueba y compare
 	    su resultado con el obtenido por la mejor versión de su propio sistema.  Inserte una gráfica
@@ -144,14 +144,14 @@ Ejercicios básicos
      buen sistema.
 
       <img src="img/img1.png" width="640" align="center">
-      > img1
+     > img1
   
   * Optimice los parámetros de su sistema de detección de pitch e inserte una tabla con las tasas de error
     y el *score* TOTAL proporcionados por `pitch_evaluate` en la evaluación de la base de datos 
 	`pitch_db/train`..
 
-    <img src="img/img4.png" width="640" align="center">
-    > img4
+      <img src="img/img4.png" width="640" align="center">
+      > img4
 
    * Inserte una gráfica en la que se vea con claridad el resultado de su detector de pitch junto al del
      detector de Wavesurfer. Aunque puede usarse Wavesurfer para obtener la representación, se valorará
