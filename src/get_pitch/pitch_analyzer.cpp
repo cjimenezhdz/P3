@@ -58,7 +58,7 @@ namespace upc {
     /// * You can use the standard features (pot, r1norm, rmaxnorm),
     ///   or compute and use other ones.
 
-    if( pot > -30.9F && (rmaxnorm > 0.41F || r1norm > 0.95F)){
+    if( pot > -power && (rmaxnorm > rmax || r1norm > r1)){
       return false;
     }else{
       return true;
