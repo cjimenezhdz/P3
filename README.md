@@ -121,13 +121,24 @@ Ejercicios básicos
 	    Recuerde configurar los paneles de datos para que el desplazamiento de ventana sea el adecuado, que
 		en esta práctica es de 15 ms.
 
-    <img src="img/img2.png" width="640" align="center">
+    > Para hacer este apartado hemos vuelto a grabar la señal de la vocal 'o' pero esta ves hemos alargado 
+    la señal dejando un inicio y un final de silencio para que se pueda apreciar mejor el contorno del pitch. 
+    > En el primer panel, tenemos la tasa de cruces por cero, que vemos que tiende a 0 en el tramo sonoro.
+    En el segundo panel, tenemo la potencia de la señal, que vemos que es más elevada en el tramo sonoro.
+    Y en el tercer panel, nos encontramos con el pitch que genera el programa `wavesurfer`.
+
+      <img src="img/img2.png" width="640" align="center">
 
       - Use el detector de pitch implementado en el programa `wavesurfer` en una señal de prueba y compare
 	    su resultado con el obtenido por la mejor versión de su propio sistema.  Inserte una gráfica
 		ilustrativa del resultado de ambos detectores.
 
-    <img src="img/img1.png" width="640" align="center">
+     > En el primer panel tenemos el pitch impo,entetado con nuestro propio sistema, y en el segundo el generado
+     por el programa `wavesurfer`.
+     > Podemos ver que hemos conseguido resultados similares, por lo tanto creemos que hemos implementado un 
+     buen sistema.
+
+      <img src="img/img1.png" width="640" align="center">
   
   * Optimice los parámetros de su sistema de detección de pitch e inserte una tabla con las tasas de error
     y el *score* TOTAL proporcionados por `pitch_evaluate` en la evaluación de la base de datos 
@@ -164,6 +175,19 @@ Ejercicios de ampliación
 
   * Técnicas de preprocesado: filtrado paso bajo, *center clipping*, etc.
   * Técnicas de postprocesado: filtro de mediana, *dynamic time warping*, etc.
+
+  ```cpp
+
+  // median filter to supress errors
+  for (unsigned int i = 1; i < f0.size(); ++i)
+  {
+    vector<float> aux {f0[i-1],f0[i],f0[i+1]};
+    sort(aux.begin(), aux.end());
+    f0[i] = aux[1];
+  }
+
+  ```
+
   * Métodos alternativos a la autocorrelación: procesado cepstral, *average magnitude difference function*
     (AMDF), etc.
   * Optimización **demostrable** de los parámetros que gobiernan el detector, en concreto, de los que
