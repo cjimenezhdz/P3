@@ -211,8 +211,8 @@ Ejercicios de ampliación
   inclusión de gráficas, tablas, código o cualquier otra cosa que ayude a comprender el trabajo realizado.
     
     > El filtro de mediana que hemos incorporado, se basa en asignar a cada punto el valor de la mediana
-      local
-      <img src="img/filtro_mediana.png" width="640" align="center">
+      local. Con el conseguimos 
+    <img src="img/filtro_mediana.png" width="640" align="center">
 
   También se valorará la realización de un estudio de los parámetros involucrados. Por ejemplo, si se opta
   por implementar el filtro de mediana, se valorará el análisis de los resultados obtenidos en función de
