@@ -30,9 +30,9 @@ Usage:
 Options:
     -h, --help      Show this screen
     --version       Show the version of the project
-    --pwr FLOAT,  --power=FLOAT value of the power threshold [default: -42]
-    --rmax FLOAT,   --rmax=FLOAT value of the rmax threshold [default: 0.43]
-    --r1 FLOAT,     --r1=FLOAT value of the r1 threshold [default: 0.98]
+    --pwr FLOAT,  --power=FLOAT value of the power threshold [default: -30.9]
+    --rmax FLOAT,   --rmax=FLOAT value of the rmax threshold [default: 0.41]
+    --r1 FLOAT,     --r1=FLOAT value of the r1 threshold [default: 0.95]
 
 Arguments:
     input-wav   Wave file with the audio signal
