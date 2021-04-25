@@ -44,7 +44,7 @@ Ejercicios básicos
 
    > Figure_1
 
-   > NOTA: no entiendo porque pero las imagenes no se visualizan correctamente, estan todas en la carpeta src/img, debajo de cada imagen pondre a cual hace referencia.
+   > NOTA: no entiendemos porque pero las imagenes no se visualizan correctamente, estan todas en la carpeta src/img, debajo de cada imagen pondremos a cual hace referencia.
 
     ```py
     import matplotlib.pyplot as plt
@@ -132,6 +132,7 @@ Ejercicios básicos
     Y en el tercer panel, nos encontramos con el pitch que genera el programa `wavesurfer`.
 
       <img src="img/img2.png" width="640" align="center">
+      > img2
 
       - Use el detector de pitch implementado en el programa `wavesurfer` en una señal de prueba y compare
 	    su resultado con el obtenido por la mejor versión de su propio sistema.  Inserte una gráfica
@@ -143,12 +144,14 @@ Ejercicios básicos
      buen sistema.
 
       <img src="img/img1.png" width="640" align="center">
+      > img1
   
   * Optimice los parámetros de su sistema de detección de pitch e inserte una tabla con las tasas de error
     y el *score* TOTAL proporcionados por `pitch_evaluate` en la evaluación de la base de datos 
 	`pitch_db/train`..
 
     <img src="img/img4.png" width="640" align="center">
+    > img4
 
    * Inserte una gráfica en la que se vea con claridad el resultado de su detector de pitch junto al del
      detector de Wavesurfer. Aunque puede usarse Wavesurfer para obtener la representación, se valorará
@@ -164,6 +167,7 @@ Ejercicios básicos
 
 
     <img src="img/img3.png" width="640" align="center">
+    > img3
    
 
 Ejercicios de ampliación
@@ -180,6 +184,7 @@ Ejercicios de ampliación
     con los argumentos añadidos.
 
     <img src="img/img5.png" width="640" align="center">
+    > img5
 
 - Implemente las técnicas que considere oportunas para optimizar las prestaciones del sistema de detección
   de pitch.
@@ -217,6 +222,7 @@ Ejercicios de ampliación
     > El filtro de mediana que hemos incorporado, se basa en asignar a cada punto el valor de la mediana
       local. Con el conseguimos 
     <img src="img/filtro_mediana.png" width="640" align="center">
+    > filtro_mediana
 
   También se valorará la realización de un estudio de los parámetros involucrados. Por ejemplo, si se opta
   por implementar el filtro de mediana, se valorará el análisis de los resultados obtenidos en función de
