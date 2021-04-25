@@ -39,8 +39,8 @@ Ejercicios básicos
 
    > Para ejecutar la representación de las dos gráficas hemos utilizado Python, aprovechando sus librerias y sus funciones para poder representar tanto la señal como su autocorrelación.
    > La señal que hemos grabado es el fonema sonoro de la vocal 'o'.
-
-   <img src="img/Figure_1.png" width="640" align="center">
+   
+  <img src="img/Figure_1.png" width="640" align="center">
 
    > Figure_1
 
@@ -131,8 +131,8 @@ Ejercicios básicos
     En el segundo panel, tenemo la potencia de la señal, que vemos que es más elevada en el tramo sonoro.
     Y en el tercer panel, nos encontramos con el pitch que genera el programa `wavesurfer`.
 
-      <img src="img/img2.png" width="640" align="center">
-      > img2
+    <img src="img/img2.png" width="640" align="center">
+    > img2
 
       - Use el detector de pitch implementado en el programa `wavesurfer` en una señal de prueba y compare
 	    su resultado con el obtenido por la mejor versión de su propio sistema.  Inserte una gráfica
