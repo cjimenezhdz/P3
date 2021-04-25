@@ -209,7 +209,8 @@ Ejercicios de ampliación
 
   Incluya, a continuación, una explicación de las técnicas incorporadas al detector. Se valorará la
   inclusión de gráficas, tablas, código o cualquier otra cosa que ayude a comprender el trabajo realizado.
-      > El filtro de mediana que hemos incorporado, se basa en asignar a cada punto el valor de la mediana
+    
+    > El filtro de mediana que hemos incorporado, se basa en asignar a cada punto el valor de la mediana
       local
       <img src="img/filtro_mediana.png" width="640" align="center">
 
