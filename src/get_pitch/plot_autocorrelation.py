@@ -18,9 +18,10 @@ plt.grid()
 #Utilizamos la funcion plt.acorr de la bibiloteca malplotlib.pyplot
 #Nos devuelve una grafica de la autocorrelación de la señal
 plt.subplot(212)
-plt.acorr(signal, maxlags = 20) #maxlags = len(signal)-1 ??
+plt.acorr(signal, maxlags = len(signal)-1) 
 plt.title('Autocorrelación')
 plt.xlabel("\tau(s)")
 plt.grid()
 
+plt.subplots_adjust(hspace=1)
 plt.show()
