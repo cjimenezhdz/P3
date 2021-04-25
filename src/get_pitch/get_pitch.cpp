@@ -23,9 +23,6 @@ Usage:
     get_pitch [options] <input-wav> <output-txt>
     get_pitch (-h | --help)
     get_pitch --version
-    get_pitch --power
-    get_pitch --rmax
-    get_pitch --r1
 
 Options:
     -h, --help      Show this screen
