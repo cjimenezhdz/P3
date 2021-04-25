@@ -42,6 +42,10 @@ Ejercicios básicos
 
    <img src="img/Figure_1.png" width="640" align="center">
 
+   > Figure_1
+
+   > NOTA: no entiendo porque pero las imagenes no se visualizan correctamente, estan todas en la carpeta src/img, debajo de cada imagen pondre a cual hace referencia.
+
     ```py
     import matplotlib.pyplot as plt
     import numpy as np
