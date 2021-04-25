@@ -40,6 +40,8 @@ Ejercicios básicos
    > Para ejecutar la representación de las dos gráficas hemos utilizado Python, aprovechando sus librerias y sus funciones para poder representar tanto la señal como su autocorrelación.
    > La señal que hemos grabado es el fonema sonoro de la vocal 'o'.
 
+   <img src="img/img3.png" width="640" align="center">
+
     ```py
     import matplotlib.pyplot as plt
     import numpy as np
