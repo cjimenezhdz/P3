@@ -42,8 +42,6 @@ Ejercicios básicos
    
   <img src="img/Figure_1.png" width="640" align="center">
 
-   > Figure_1
-
    > NOTA: no entiendemos porque pero las imagenes no se visualizan correctamente, estan todas en la carpeta src/img, debajo de cada imagen pondremos a cual hace referencia.
 
     ```py
